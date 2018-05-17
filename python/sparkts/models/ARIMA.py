@@ -1,5 +1,5 @@
 from . import _py2java_double_array
-from .model import PyModel
+from ._model import PyModel
 
 from pyspark.mllib.common import _py2java, _java2py
 from pyspark.mllib.linalg import Vectors
