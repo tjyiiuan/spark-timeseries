@@ -1,4 +1,4 @@
-from test_utils import PySparkTestCase
+from .test_utils import PySparkTestCase
 from sparkts.timeseriesrdd import *
 from sparkts.timeseriesrdd import _TimeSeriesSerializer
 from sparkts.datetimeindex import *

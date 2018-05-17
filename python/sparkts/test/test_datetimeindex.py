@@ -1,4 +1,4 @@
-from test_utils import PySparkTestCase
+from .test_utils import PySparkTestCase
 from sparkts.datetimeindex import *
 import pandas as pd
 
