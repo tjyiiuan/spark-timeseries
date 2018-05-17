@@ -142,8 +142,13 @@ class TimeSeriesRDD(RDD):
         """
         Returns an RDD of Pandas Series objects indexed with Pandas DatetimeIndexes
         """
-        pd_index = self.index().to_pandas_index()
-        return self.map(lambda x: (x[0], pd.Series(x[1], pd_index)))
+        def get_index(self):
+            index = self.index().to_pandas_index()
+            indexDC = index.copy(name="index", deep=True)
+            return indexDC
+
+        index = get_index(self)
+        return self.map(lambda x: (x[0], pd.Series(x[1], index))) 
 
     def to_pandas_dataframe(self):
         """
