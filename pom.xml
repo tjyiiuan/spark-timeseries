@@ -30,7 +30,7 @@
     </license>
   </licenses>
 
- <developers>
+  <developers>
     <developer>
       <name>Sandy Ryza</name>
       <email>sandyryza@gmail.com</email>
@@ -54,8 +54,8 @@
     <java.version>1.8</java.version>
     <scala.minor.version>2.11</scala.minor.version>
     <scala.complete.version>2.11.8</scala.complete.version>
-    <spark.version>2.0.0</spark.version>
-    <breeze.version>0.12</breeze.version>
+    <spark.version>2.3.0</spark.version>
+    <breeze.version>0.13.2</breeze.version>
   </properties>
 
   <distributionManagement>
@@ -145,7 +145,7 @@
         </executions>
       </plugin>
 
-       <!--enable surefire-->
+      <!--enable surefire-->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
