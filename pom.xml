@@ -478,10 +478,10 @@
 
   <profiles>
     <profile>
-      <id>scala-2.10</id>
+      <id>scala-2.11</id>
       <properties>
         <scala.minor.version>2.10</scala.minor.version>
-        <scala.complete.version>2.10.6</scala.complete.version>
+        <scala.complete.version>2.11.12</scala.complete.version>
       </properties>
     </profile>
   </profiles>
